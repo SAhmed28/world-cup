@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style-type: none;
+}
+.active{
+    background: #DD0000 !important;
+    color: #fff !important;
+}
+:root {
+    --button-bg-color: #DD0000;
+    --font-color: #161616;
+  }
+
+header{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    
+}
+.header-area{
+    width: 90%;
+    background-color: #161616;
+    color: #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-text{
+    padding: 4rem 1rem 4rem 7rem;
+    
+    width: 42%;
+}
+.header-text h1{
+    font-size: 4em;
+    font-weight: bolder;
+}
+.header-text p{
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.header-text a{
+    color: #fff;
+    padding: 16px 25px;
+    background: var(--button-bg-color);
+    font-weight: 400;
+    font-size: 1.2em;
+    border-radius: 5px;
+    position: relative;
+    transition: all .35s;
+}
+.header-text a span{
+    position: relative;
+    z-index: 2;
+  }
+.header-text a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    color: #fff;
+    transition: all .35s;
+  }
+  
+.header-text a:hover{
+    color: #fff;
+  }
+  
+.header-text a:hover:after{
+    width: 100%;
+  }
+.header-text .fa-chevron-right{
+    padding-left: 10px;
+}
+.header-img{
+    width: 58%;
+}
+.header-img img{
+    width: 100%;
+}
+
+/* -----------------------------------------------
+                    header ends
+-------------------------------------------------- */
+article{
+    display: flex;
+    justify-content: center;
+}
+.blog-part{
+    width: 90%;
+    margin-top: 130px;
+    display: flex;
+}
+.blog-menu-area{
+    width: 25%;
+    padding-right: 24px;
+    
+}
+.blog-menu{
+    height: 312px;
+    width: 100%;
+    background: #161616;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blog-menu a{
+    height: 64px;
+    width: 80%;
+    margin: 15px 0;
+    background: #fff;
+    color: var(--font-color);
+    text-align: center;
+    font-size: 20px;
+    line-height: 64px;
+    border-radius: 10px;
+    position: relative;
+    transition: all .35s;
+}
+.blogs{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+}
+.blog{
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+.blog .blog-img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.blog-writing{
+    padding: 0 20px;
+}
+.blog a{
+    font-size: 1em;
+    padding: 4px 16px;
+    color: var(--font-color);
+    border: 1px solid var(--font-color);
+    border-radius: 5px;
+}
+
+.blog h3{
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 15px;
+    color: var(--font-color);
+}
+.blog .info ul{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+.blog .info ul li{
+    padding-right: 30px;
+    font-size: 1em;
+    color: #16161670;
+}
+
+/* -----------------------------------------------
+                    Blog ends
+-------------------------------------------------- */
+.hidden-button{
+    text-align: center;
+    margin: 5% 0 0;
+    display: none;
+}
+footer{
+    margin-top: 130px;
+    background: #161616;
+    display: flex;
+    justify-content: center;
+}
+.foot-text{
+    width: 90%;
+    color: #fff;
+    text-align: center;
+    padding: 130px;
+}
+.foot-text h5{
+    font-size: 40px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid #ffffff10;
+}
+.foot-text ul{
+    display: flex;
+    justify-content: center;
+}
+.foot-text .contact li{
+    padding: 50px 2% 30px;
+}
+.foot-text ul li a{
+    color: #B9B9B9;
+}
+.social li{
+    padding: 20px 1%;
+}
+.social li a{
+    font-size: 1.5em;
+}
+footer ul li a:hover{
+    color: #fff;
+}
+/* -----------------------------------------------
+                    Footer ends
+-------------------------------------------------- */
+
+/* -----------------------------------------------
+                    Hover starts
+-------------------------------------------------- */
+article a,.hidden-button a{
+    position: relative;
+    transition: all .35s;
+}
+article a span,.hidden-button a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+article a:after,.hidden-button a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    transition: all .35s;
+  }
+  
+article a:hover,.hidden-button a:hover{
+    color: #fff;
+  }
+  
+article a:hover:after,.hidden-button a:hover:after{
+    width: 100%;
+  }
+
+/* -----------------------------------------------
+                    Hover ends
+-------------------------------------------------- */
+
+
+
+
+
+/* -----------------------------------------------
+                    Media Quesries Start
+-------------------------------------------------- */
+/*-- Mobile device-- */
+@media only screen and (max-width:688px) {
+    header {
+        padding-top: 20px;
+    }
+    .header-text {
+        text-align: center;
+        padding: 38px 28px;
+    }
+    .header-area {
+        width: 90%;
+        flex-direction: column;
+    }
+    .header-text {
+        padding: 0;
+        width: 80%;
+    }
+    .header-text h1 {
+        font-size: 2em;
+        font-weight: bolder;
+        padding: 28px 0 0;
+    }
+    .header-text p {
+        font-size: 0.9em;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        white-space: nowrap; 
+        width: 300px; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .header-text a { 
+        padding: 7px 10px;
+        font-size: 1em;
+        margin-bottom: 22px;
+        display: inline-block;
+    }
+
+
+    .blog-part {
+        display: block;
+        width: 90%;
+        margin: 25px 0;
+    }
+    .blog-menu-area {
+        width: 100%;
+    }
+    .blog-menu {
+        height: 176px;
+        width: 100%;
+        background: transparent;
+        
+    }
+    
+
+    .blog-menu a {
+        height: 48px;
+        width: 61%;
+        margin: 5px 0;
+        font-size: 18px;
+        line-height: 48px;
+        border: 1px solid #E8E8E8;
+    }
+
+    .blogs {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 0;
+        margin-top: 25px;
+    }
+    .blog {
+        margin-bottom: 20px;
+    }
+    .blog-writing {
+        padding: 0 15px;
+    }
+
+
+    footer {
+        margin-top: 0px;
+    }
+    .foot-text {
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        padding: 0px;
+    }
+    .foot-text h5 {
+        padding-bottom: 8px;
+    }
+    .foot-text .contact li {
+        padding: 10px 0 0px;
+    }
+    .foot-text ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .social {
+        flex-direction: row !important;
+    }
+}
+
+
+/*-- Tablet device-- */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .header-text {
+        padding: 3rem 0rem 3rem 3rem;
+    }
+    .header-text h1 {
+        font-size: 2.5em;
+    }
+    .header-text p{
+        white-space: nowrap; 
+        width: 200px; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .header-text a {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+
+    .blog-part {
+        width: 90%;
+        margin-top: 0px;
+        flex-direction: column;
+    }
+    .blog-menu-area {
+        width: 100%;
+    }
+    .blog-menu {
+        flex-direction: row;
+        height: 150px;
+        background: transparent;
+    }
+    .blog-menu a {
+        width: 80%;
+        margin: 15px 10px;
+        text-align: center;
+        font-size: 1em;
+        line-height: 64px;
+        display: inline-block;
+        border: 1px solid #E8E8E8;
+    }
+    .blogs {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 24px;
+    }
+
+    .hidden-button{
+        text-align: center;
+        margin: 5% 0 0;
+        display: block;
+        
+    }
+    .hidden-button a{
+        padding: 12px 29px;
+        border-radius: 5px;
+    }
+
+    footer {
+        margin-top: 40px;
+    }
+    .foot-text {
+        width: 90%;
+        padding: 50px 0;
+    }
+    .foot-text h5 {
+        padding-bottom: 35px;
+    }
+    .foot-text .contact li {
+        padding: 35px 1.1% 30px;
+    }
+}
