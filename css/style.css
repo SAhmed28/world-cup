@@ -422,9 +422,7 @@ article a:hover:after,.hidden-button a:hover:after{
         justify-content: center;
     }
     .upcoming-matches {
-        display: grid;
         grid-template-columns: repeat(1,1fr);
-        gap: 20px;
     }
 }
 
@@ -501,5 +499,17 @@ article a:hover:after,.hidden-button a:hover:after{
     }
     .foot-text .contact li {
         padding: 35px 1.1% 30px;
+    }
+
+    /* Upcoming page */
+    section {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .upcoming-matches {
+        grid-template-columns: repeat(2,1fr);
     }
 }
