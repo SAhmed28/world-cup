@@ -90,6 +90,7 @@ header{
 }
 .header-img img{
     width: 100%;
+    display: block;
 }
 
 /* -----------------------------------------------
