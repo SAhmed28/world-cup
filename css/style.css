@@ -221,6 +221,51 @@ footer ul li a:hover{
 /* -----------------------------------------------
                     Footer ends
 -------------------------------------------------- */
+section{
+    width: 75%;
+}
+.upcoming-matches{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.upcoming-matches .match{
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 53px 30px;
+}
+.upcoming-matches .match:hover{
+    border: 1px solid var(--button-bg-color);
+}
+.upcoming-matches .img-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upcoming-matches .img-part span{
+    padding: 0 20px;
+    color: var(--font-color);
+    font-size: 1em;
+    font-weight: bold;
+}
+.info-part{
+    text-align: center;
+}
+.info-part h4{
+    padding: 20px 0 0; 
+    font-size: 20px; 
+}
+.info-part p{
+    color: #4D4D4D;
+    font-size: 16px;
+}
+/* -----------------------------------------------
+                    Upcoming Match page ends
+-------------------------------------------------- */
+
+
+
+
 
 /* -----------------------------------------------
                     Hover starts
@@ -365,6 +410,21 @@ article a:hover:after,.hidden-button a:hover:after{
     }
     .social {
         flex-direction: row !important;
+    }
+
+
+    /* Upcoming page */
+    section {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .upcoming-matches {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
     }
 }
 
