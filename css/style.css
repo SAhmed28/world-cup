@@ -87,6 +87,9 @@ header{
 }
 .header-img{
     width: 58%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
 }
 .header-img img{
     width: 100%;
@@ -106,13 +109,15 @@ article{
     display: flex;
 }
 .blog-menu-area{
-    width: 25%;
+    /* width: 25%; */
     padding-right: 24px;
+    display: flex;
     
 }
 .blog-menu{
     height: 312px;
-    width: 100%;
+    /* width: 100%; */
+    width: 290px;
     background: #161616;
     border-radius: 10px;
     display: flex;
@@ -122,7 +127,8 @@ article{
 }
 .blog-menu a{
     height: 64px;
-    width: 80%;
+    /* width: 80%; */
+    width: 201px;
     margin: 15px 0;
     background: #fff;
     color: var(--font-color);
@@ -459,6 +465,7 @@ article a:hover:after,.hidden-button a:hover:after{
     .blog-menu {
         flex-direction: row;
         height: 150px;
+        width: 100%;
         background: transparent;
     }
     .blog-menu a {
